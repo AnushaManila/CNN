@@ -1,0 +1,32 @@
+"Keras 2D CNN visualization"
+
+1. Prepare and build a model architecture with weights
+
+2. scan through the first 200 filters
+	
+	build a loss function that maximizes the activation of the nth filter of the layer considered
+	
+	compute the gradient of the input picture wrt this loss
+	
+	normalize the gradient
+	
+	start from a gray image with some random noise
+	
+	run gradient ascent for 20 steps and save the filters
+
+	(some filters get stuck to 0, we can skip them)
+
+	decode the resulting input image
+
+		for positive loss_value,
+	
+			deprocess_image
+
+3. stich the best n*n filters on a n x n grid.
+
+4. the filters that have the highest loss are assumed to be better-looking. So only keep the top n*n filters.
+
+5. build a black picture with enough space for the figure with subplots
+
+6. fill the picture with the saved filters
+
