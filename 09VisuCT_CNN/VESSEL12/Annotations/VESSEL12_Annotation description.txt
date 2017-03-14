@@ -1,0 +1,13 @@
+Friday, February 10, 2012
+VESSEL12 challenge annotation files description
+
+Each annotation file contains a list of labeled points for a single scan. Each point has been labeled by three annotators independently.
+Only points on which 3 annotators agreed on the label have been included.
+
+The files are in csv format. The format of each point is x,y,z,label
+x,y and z designate 0-based voxel coordinates. I.e. point 0,0,0 is the voxel in the upper left corner of the first slice.
+label = 1 means this voxel is classified as a vessel
+label = 0 means this voxel is classified as not a vessel. This category includes lung parenchyma, airway walls, lesions and fissures
+
+
+For more information, please visit http://VESSEL12.grand-challenge.org
